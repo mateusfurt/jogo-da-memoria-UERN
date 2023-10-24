@@ -51,7 +51,7 @@ public class GameController : MonoBehaviour {
     }
 
     void Update(){
-        if(!vezJogador){
+        if(!vezJogador && countCorrectGuesses < gameGuesses){
 
             PickAPuzzle();
 

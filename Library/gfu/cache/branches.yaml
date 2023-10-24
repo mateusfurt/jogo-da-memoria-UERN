@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2023-10-24T15:47:03.351-03:00
-  initializedAtString: 2023-10-24T15:47:03.312-03:00
+  lastUpdatedAtString: 2023-10-24T19:08:58.844-03:00
+  initializedAtString: 2023-10-24T19:08:58.831-03:00
   localBranches:
   - name: main
     tracking: origin/main
   remoteBranches:
+  - name: origin/HEAD
+    tracking: '[None]'
   - name: origin/main
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/mateusfurt/memoriaroboldo.git
+    url: https://github.com/mateusfurt/jogo-da-memoria-UERN.git
     login: 
     user: 
     host: 
@@ -36,24 +38,30 @@ MonoBehaviour:
     - name: main
       remote:
         name: origin
-        url: https://github.com/mateusfurt/memoriaroboldo.git
+        url: https://github.com/mateusfurt/jogo-da-memoria-UERN.git
       trackingBranch: main
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - HEAD
       - main
     subKeyValues:
     - Values:
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/mateusfurt/jogo-da-memoria-UERN.git
+        trackingBranch: 
       - name: main
         remote:
           name: origin
-          url: https://github.com/mateusfurt/memoriaroboldo.git
+          url: https://github.com/mateusfurt/jogo-da-memoria-UERN.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/mateusfurt/memoriaroboldo.git
+      url: https://github.com/mateusfurt/jogo-da-memoria-UERN.git
