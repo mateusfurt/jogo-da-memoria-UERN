@@ -125,7 +125,7 @@ public class SpeekE : MonoBehaviour{
                         dicas[1] = j;
                         this.dica1 = i+1;
                         this.dica2 = j+1;
-                        /* falarDica(); */
+                        falarDica();
                         return dicas;
                     }
                 }
@@ -147,7 +147,7 @@ public class SpeekE : MonoBehaviour{
 
         dica1 = escolha1;
         dica2 = escolha2;
-        /* falarDica(); */
+        falarDica();
         dicas[0] = dica1;
         dicas[1] = dica2;
         return dicas;
@@ -163,7 +163,7 @@ public class SpeekE : MonoBehaviour{
         Debug.Log(estadoAtual.msg);
 
         setConf();
-        //Speek();
+        Speek();
         startAnimation();
     }
 }

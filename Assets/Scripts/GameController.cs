@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour {
     public int[] jogadas = new int[2];
     public int pontosjogador = 0;
     public int pontosrobo = 0;
+    public string acerto;
 
     //private int[] tabuleiro;
 
@@ -105,7 +106,7 @@ public class GameController : MonoBehaviour {
 
     public void PickAPuzzle()
     {
-        if(!firstGuess && !secondGuess){
+        if(!firstGuess && !secondGuess && !vezJogador){
             int chanceAcertar = Mathf.FloorToInt(Random.Range(1, 4));
             if(chanceAcertar == 1 || countCorrectGuesses == gameGuesses-1){
                 Debug.Log("ACERTAR");
@@ -151,7 +152,13 @@ public class GameController : MonoBehaviour {
             btns[secondGuessIndex].image.sprite = gamePuzzles[secondGuessIndex];
 
             if(firstGuessPuzzle == secondGuessPuzzle){
-                Debug.Log("Cartas corretas");
+                if (vezJogador)
+                {
+                    acerto = "Jogador acertou";
+                }else{
+                    acerto = "Roboldo acertou";
+                }
+                Debug.Log(acerto);
                 /* speekE.reacao(true); */
                 speekE.tabuleiro[firstGuessIndex] = -1;
                 speekE.tabuleiro[secondGuessIndex] = -1;
@@ -162,14 +169,14 @@ public class GameController : MonoBehaviour {
                 }
             } else {
                 Debug.Log("Tente outra vez");
-                if(vezJogador){
+                
+                //speekE.reacao(false);
+            }
+            if(vezJogador){
                     vezJogador = false;
                 }else{
                     vezJogador = true;
                 }
-                //speekE.reacao(false);
-            }
-            
 
             countGuesses++;
 

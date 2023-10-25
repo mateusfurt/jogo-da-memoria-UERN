@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2023-10-24T19:10:22.450-03:00
-  initializedAtString: 2023-10-24T19:05:37.357-03:00
+  lastUpdatedAtString: 2023-10-25T19:45:11.763-03:00
+  initializedAtString: 2023-10-25T18:13:00.144-03:00
   entries:
+  - path: Assets\Scripts\Agent\SpeekE.cs
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Assets\Scripts\Agent\SpeekE.cs
+    projectPath: Assets\Scripts\Agent\SpeekE.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Scripts\GameController.cs
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Assets\Scripts\GameController.cs
     projectPath: Assets\Scripts\GameController.cs
@@ -28,12 +34,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\Bee\1900b0aE.dag_fsmtime
-    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\Bee\1900b0aE.dag_fsmtime
-    projectPath: Library\Bee\1900b0aE.dag_fsmtime
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
     projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
@@ -43,6 +43,12 @@ MonoBehaviour:
   - path: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.pdb
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.pdb
     projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
+    projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -86,8 +92,8 @@ MonoBehaviour:
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\gfu\cache\branches.yaml
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
@@ -97,6 +103,12 @@ MonoBehaviour:
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -154,9 +166,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
+    projectPath: Library\StateCache\MainStageHierarchy\4d\4d2a36d9faf65734f0bbefb3ee623532.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Logs\AssetImportWorker0.log
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Logs\AssetImportWorker0.log
     projectPath: Logs\AssetImportWorker0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Logs\AssetImportWorker0-prev.log
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Logs\AssetImportWorker0-prev.log
+    projectPath: Logs\AssetImportWorker0-prev.log
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -164,41 +188,47 @@ MonoBehaviour:
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Logs\AssetImportWorker1.log
     projectPath: Logs\AssetImportWorker1.log
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Logs\AssetImportWorker1-prev.log
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Logs\AssetImportWorker1-prev.log
+    projectPath: Logs\AssetImportWorker1-prev.log
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Logs\shadercompiler-AssetImportWorker0.log
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Logs\shadercompiler-AssetImportWorker0.log
     projectPath: Logs\shadercompiler-AssetImportWorker0.log
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Temp\__Backupscenes\0.backup
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Temp\FSTimeGet-150a35f1cb6352d4d9f3e4d892326173
-    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\FSTimeGet-150a35f1cb6352d4d9f3e4d892326173
-    projectPath: Temp\FSTimeGet-150a35f1cb6352d4d9f3e4d892326173
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Temp\FSTimeGet-b6d3b09074bf08b4a96e13206c0aba38
-    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\FSTimeGet-b6d3b09074bf08b4a96e13206c0aba38
-    projectPath: Temp\FSTimeGet-b6d3b09074bf08b4a96e13206c0aba38
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\FSTimeGet-4d15e595d8722474eaf6e214211d1460
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\FSTimeGet-4d15e595d8722474eaf6e214211d1460
+    projectPath: Temp\FSTimeGet-4d15e595d8722474eaf6e214211d1460
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\FSTimeGet-c9b316ec13db30143a64af3821d7e829
-    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\FSTimeGet-c9b316ec13db30143a64af3821d7e829
-    projectPath: Temp\FSTimeGet-c9b316ec13db30143a64af3821d7e829
+  - path: Temp\FSTimeGet-9c205b1cf0c60c840937fe5094f4b654
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\FSTimeGet-9c205b1cf0c60c840937fe5094f4b654
+    projectPath: Temp\FSTimeGet-9c205b1cf0c60c840937fe5094f4b654
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\FSTimeGet-e522c1ac7b3b47743b73c87352fedb32
-    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\FSTimeGet-e522c1ac7b3b47743b73c87352fedb32
-    projectPath: Temp\FSTimeGet-e522c1ac7b3b47743b73c87352fedb32
+  - path: Temp\FSTimeGet-f198e2a84b0c13b44ab5b589a76a52f5
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\FSTimeGet-f198e2a84b0c13b44ab5b589a76a52f5
+    projectPath: Temp\FSTimeGet-f198e2a84b0c13b44ab5b589a76a52f5
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -206,5 +236,11 @@ MonoBehaviour:
     fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\workerlic
+    fullPath: C:\Users\mateu\Documents\GitHub\jogodamemoria\jogo-da-memoria-UERN\Temp\workerlic
+    projectPath: Temp\workerlic
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
