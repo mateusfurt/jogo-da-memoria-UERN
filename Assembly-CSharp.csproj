@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\logjogador.txt" />
+    <None Include="Assets\logdev.txt" />
     <None Include="Assets\Scripts\Agent\falas.txt" />
   </ItemGroup>
   <ItemGroup>

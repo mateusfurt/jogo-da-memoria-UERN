@@ -88,8 +88,8 @@ public class SpeekE : MonoBehaviour{
             estadoAtual = ctrArq.pickUpEmocao("Alegre");
         }else{
 
-            int sentimento = (int)Random.Range(1, 3);
-
+            //int sentimento = (int)Random.Range(1, 3);
+            int sentimento = 2;
             if(sentimento == 1){
                 estadoAtual = ctrArq.pickUpEmocao("Triste");
             }else if(sentimento == 2){
@@ -101,7 +101,7 @@ public class SpeekE : MonoBehaviour{
             }
         }
         if(estadoAtual != null){
-            setConf();
+            //setConf();
 
             startAnimation();
         }
@@ -125,7 +125,7 @@ public class SpeekE : MonoBehaviour{
                         dicas[1] = j;
                         this.dica1 = i+1;
                         this.dica2 = j+1;
-                        falarDica();
+                        //falarDica();
                         return dicas;
                     }
                 }
@@ -147,13 +147,12 @@ public class SpeekE : MonoBehaviour{
 
         dica1 = escolha1;
         dica2 = escolha2;
-        falarDica();
+        //falarDica();
         dicas[0] = dica1;
         dicas[1] = dica2;
         return dicas;
     }
-
-    private void falarDica(){
+    public void falarDica(string frase, bool personalizado){
 
         estadoAtual = ctrArq.getFrases("2");
         Debug.Log("arquivo speek: "+estadoAtual.msg);
@@ -161,9 +160,13 @@ public class SpeekE : MonoBehaviour{
 
         estadoAtual.msg = estadoAtual.msg+ " " +dica1.ToString()+ " e a "+ dica2.ToString()+ ".";
         Debug.Log(estadoAtual.msg);
+        if (personalizado)
+        {
+            estadoAtual.msg = frase;
+        }
 
         setConf();
         Speek();
-        startAnimation();
+        //startAnimation();
     }
 }

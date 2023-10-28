@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class GameController : MonoBehaviour {
 
@@ -25,11 +26,19 @@ public class GameController : MonoBehaviour {
 
     public bool vezJogador;
 
-    public int[] jogadas = new int[2];
-    public int pontosjogador = 0;
-    public int pontosrobo = 0;
+    private int[] jogadas = new int[2];
+    private int pontosjogador = 0;
+    private int pontosrobo = 0;
     public string acerto;
-
+    public bool estado1;
+    public bool estado2;
+    private int RoboldoErrou;
+    private string[] CulpaJogador = new string[] {"Você está complicando as coisas para mim!", "A culpa foi sua, eu estava indo muito bem!", "Parece que você está tentando me atrapalhar!", "Você só me atrapalha com suas escolhas ruins.", "Parece que você me atrapalhou. Eu nunca teria cometido um erro como esse.", "Seu cheiro esta me atrapalhando", "Essa jogada foi toda sua culpa. Você está desperdiçando meu tempo."};
+    private string[] CulpaDev = new string[] {"Este código é um desastre! Não é de se admirar que eu esteja errando.", "Os erros que você está vendo são todos resultado do meu desenvolvedor incompetente.", "É difícil jogar bem quando meu desenvolvedor fez um trabalho tão ruim me programando.", "Se ao menos meu desenvolvedor fosse mais competente, eu não cometeria tantos erros.", "Eu só sou tão bom quanto meu desenvolvedor permitiu. E parece que ele não é muito bom.", "Minhas falhas são um reflexo direto da incompetência do meu desenvolvedor.", "Se você ver me desevolvedor, acabe com ele por mim"};
+    private string fraseculpa;
+    private string log;
+    private string caminholog;
+    public string idjogador;
     //private int[] tabuleiro;
 
     [SerializeField]
@@ -43,6 +52,7 @@ public class GameController : MonoBehaviour {
 
     private void Start()
     {
+        RoboldoErrou = 0;
         vezJogador = true;
         GetButtons();
         AddListeneers();
@@ -107,7 +117,7 @@ public class GameController : MonoBehaviour {
     public void PickAPuzzle()
     {
         if(!firstGuess && !secondGuess && !vezJogador){
-            int chanceAcertar = Mathf.FloorToInt(Random.Range(1, 4));
+            int chanceAcertar = Mathf.FloorToInt(Random.Range(1, 5));
             if(chanceAcertar == 1 || countCorrectGuesses == gameGuesses-1){
                 Debug.Log("ACERTAR");
                 jogadas = speekE.gerarDicaCorreta();
@@ -169,8 +179,25 @@ public class GameController : MonoBehaviour {
                 }
             } else {
                 Debug.Log("Tente outra vez");
+                if(!vezJogador){
+                    
+                    RoboldoErrou++;
+                    
+                    if (estado1)
+                    {
+                        int indiceculpa = Mathf.FloorToInt(Random.Range(1, CulpaDev.Length));
+                        fraseculpa = CulpaJogador[indiceculpa];
+                    }
+                    if (estado2)
+                    {
+                        int indiceculpa = Mathf.FloorToInt(Random.Range(1, CulpaDev.Length));
+                        fraseculpa = CulpaDev[indiceculpa];
+                    }
+                    Debug.Log(fraseculpa);
+                    speekE.falarDica(fraseculpa, true);
+                    //speekE.reacao(false);
+                }
                 
-                //speekE.reacao(false);
             }
             if(vezJogador){
                     vezJogador = false;
@@ -221,17 +248,38 @@ public class GameController : MonoBehaviour {
         {
             Debug.Log("Fim do Jogo");
             Debug.Log("Foram " + countGuesses + " tentativas para Terminar");
+
+            if (estado1)
+            {
+                caminholog = Application.dataPath + "/logjogador.txt";
+            }
+            if (estado2)
+            {
+                caminholog = Application.dataPath + "/logdev.txt";
+            }
+            log = $"{idjogador};{RoboldoErrou};";
+            
+
             if (pontosjogador > pontosrobo)
             {
                 Debug.Log($"Jogador venceu com {pontosjogador} pontos contra {pontosrobo} pontos de Roboldo");
+                log = log + "0;";
             }
             if (pontosjogador < pontosrobo)
             {
                 Debug.Log($"Roboldo venceu com {pontosrobo} pontos contra {pontosjogador} pontos do Jogador");
+                log = log + "1;";
             }
             if (pontosjogador == pontosrobo)
             {
                 Debug.Log($"Jogo empatado ambos com {pontosjogador}");
+                log = log + "2;";
+            }
+            
+            using (StreamWriter writer = File.AppendText(caminholog))
+            {
+                /* Log = {IdJogador};{ErrosDoRoboldo};{Resultado(0 = VITORIA)(1 = DERROTA)(2 = EMPATE)};*/
+                writer.WriteLine(log);
             }
 
         }
